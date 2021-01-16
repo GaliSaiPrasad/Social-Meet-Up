@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+        body{
+            background: linear-gradient(#3f51b5,#000);
+        }
+        .main{
+            width: 350px;
+            height: 100vh;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+            background-color: #fdfdfd;
+        }
+        .header{
+            width: 100%;
+            height: 20px;
+            padding: 10px 0;
+            background-color: #f9f9f9;
+            box-shadow: 0 0 10px 2px rgba(0,0,0,0.1);
+            position: relative;
+        }
+        .header i,h3{
+            position: absolute;
+        }
+        .header h3{
+            left: 130px;
+            top: 10px;
+        }
+        .bars{
+            left: 20px;
+        }
+        .bell{
+            right: 20px;
+        }
+        .welcome{
+            color: #777;
+            margin-top: 20px;
+            margin-left: 80px;
+        }
+        .main-text{
+            width: 300px;
+            margin: 30px auto 0;
+            color: #777;
+        }
+        .main-text h2{
+            margin-bottom: 20px;
+        }
+        .footer-menu{
+            width: 100%;
+            position: absolute;
+            bottom: -10px;
+            padding: 17px 5px;
+            background: #f9f9f9;
+            box-shadow: 0 0 10px 2px rgba(0,0,0,0.1);
+        }
+        .footer-menu i{
+            width: 20px;
+            margin: 0 32px;
+            cursor: pointer;
+        }
+        .swiper-container{
+            top: 20px;
+            height: 350px;
+        }
+        .swiper-wrapper{
+            align-items: center;
+        }
+        .swiper-slide{
+            width: 200px;
+            height: 250px;
+            border-radius: 7px;
+        }
+        .swiper-slide img{
+            width: 200px;
+            height: 250px;
+            border-radius: 7px;
+        }
+        .swiper-slide-active{
+            transform: scale(1.2);
+            transition: .4s;
+        }
+        .info{
+            width: 92%;
+            height: 30px;
+            padding: 8px 8px;
+            bottom: 0;
+            background: rgba(0,0,0,0.6);
+            position: absolute;
+            text-align: justify;
+            border-radius: 0 0 5px 5px;
+            color: #fff;
+        }
+        .info h3{
+            top: 5px;
+            font-size: 15px;
+            margin-left: 7px;
+            font-weight: 100;
+        }
+        .info p{
+            margin-top: 18px;
+            font-size: 10px;
+            margin-left: 7px;
+        }
+        .info a{
+            text-decoration: none;
+            font-size: 12px;
+            float: right;
+            margin-right: 7px;
+            margin-top: -25px;
+            padding: 3px;
+            border: 1px solid #fff;
+            border-radius: 20px;
+            color: #fff;
+        }
+        .swiper-pagination{
+            bottom: 0 !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <i class="fa fa-bars bars" aria-hidden="true" style="font-size: 23px;color: #3f51b5;"></i>
+            <h3 style="color: #3f51b5;">MEET UP</h3>
+            <i class="fa fa-bell bell" aria-hidden="true" style="font-size: 23px;color: #3f51b5;"></i>
+        </div>
+        <h1 class="welcome">WELCOME</h1>
+        <div class="main-text">
+            <h2>OUR TEAM</h2>
+            <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</small>
+        </div>
+
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                  <img src="1.jpg" alt="">
+                  <div class="info">
+                      <h3>Kishore</h3>
+                      <p>Founder & CEO</p>
+                      <a href="#">Contact</a>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                  <img src="2.jpg" alt="">
+                  <div class="info">
+                      <h3>Thomas Markle</h3>
+                      <p>Web Developer</p>
+                      <a href="#">Contact</a>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                  <img src="3.jpg" alt="">
+                  <div class="info">
+                      <h3>Steve Jobs</h3>
+                      <p>Founder & CEO</p>
+                      <a href="#">Contact</a>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                  <img src="4.jpg" alt="">
+                  <div class="info">
+                      <h3>Rohit Sharma</h3>
+                      <p>Cricket Player</p>
+                      <a href="#">Contact</a>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                  <img src="5.jpg" alt="">
+                  <div class="info">
+                      <h3>Lokesh</h3>
+                      <p>Web Developer</p>
+                      <a href="#">Contact</a>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                  <img src="6.jpg" alt="">
+                  <div class="info">
+                      <h3>Kishore</h3>
+                      <p>Founder & CEO</p>
+                      <a href="#">Contact</a>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                  <img src="7.jpg" alt="">
+                  <div class="info">
+                      <h3>Kishore</h3>
+                      <p>Founder & CEO</p>
+                      <a href="#">Contact</a>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                  <img src="8.jpg" alt="">
+                  <div class="info">
+                      <h3>Kishore</h3>
+                      <p>Founder & CEO</p>
+                      <a href="#">Contact</a>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                  <img src="9.jpg" alt="">
+                  <div class="info">
+                      <h3>Kishore</h3>
+                      <p>Founder & CEO</p>
+                      <a href="#">Contact</a>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                  <img src="10.jpg" alt="">
+                  <div class="info">
+                      <h3>Kishore</h3>
+                      <p>Founder & CEO</p>
+                      <a href="#">Contact</a>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                  <img src="11.jpg" alt="">
+                  <div class="info">
+                      <h3>Kishore</h3>
+                      <p>Founder & CEO</p>
+                      <a href="#">Contact</a>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                  <img src="12.jpg" alt="">
+                  <div class="info">
+                      <h3>Kishore</h3>
+                      <p>Founder & CEO</p>
+                      <a href="#">Contact</a>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                  <img src="13.jpg" alt="">
+                  <div class="info">
+                      <h3>Kishore</h3>
+                      <p>Founder & CEO</p>
+                      <a href="#">Contact</a>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                  <img src="14.jpg" alt="">
+                  <div class="info">
+                      <h3>Kishore</h3>
+                      <p>Founder & CEO</p>
+                      <a href="#">Contact</a>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                  <img src="15.jpg" alt="">
+                  <div class="info">
+                      <h3>Kishore</h3>
+                      <p>Founder & CEO</p>
+                      <a href="#">Contact</a>
+                  </div>
+              </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Arrows -->
+          </div>
+
+        <div class="footer-menu">
+            <i class="fa fa-home" aria-hidden="true" style="font-size: 26px;color: #3f51b5;"></i>
+            <i class="fa fa-search" aria-hidden="true" style="font-size: 23px;color: #3f51b5;"></i>
+            <i class="fa fa-user" aria-hidden="true" style="font-size: 23px;color: #3f51b5;"></i>
+            <i class="fa fa-undo" aria-hidden="true" style="font-size: 23px;color: #3f51b5;"></i>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        // alert("This Site is only created for making people to connect don't misuse it");
+        var swiper = new Swiper('.swiper-container', {
+          slidesPerView: 'auto',
+          spaceBetween: 40,
+          centeredSlides: true,
+          garbCursor: true,
+          loop: true,
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+        });
+      </script>
+</body>
+</html>
